@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- 
+	index.html
+    Copyright (C) 2018  Laura Rodríguez Martín
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see https://www.gnu.org/licenses/.		
+-->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Cultivos CyL</title>
+		<link rel="icon" href="img/icon.png">
+	 	<!-- Latest compiled and minified CSS -->
+	 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	 	<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>	
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">	
+		<link rel="stylesheet" href="css/cultivos-cyl.css">			
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<!-- Brand -->
+			<a class="navbar-brand" href="#">Cultivos Leñosos CyL</a>
+			<!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#section_1" id="menu_1"><i class="far fa-chart-bar"></i> Sección 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#section_2" id="menu_2"><i class="far fa-chart-bar"></i> Sección 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#section_3" id="menu_3"><i class="far fa-chart-bar"></i> Sección 3</a>
+					</li> 
+					<li class="nav-item">
+						<a class="nav-link" href="#section_4" id="menu_4"><i class="far fa-chart-bar"></i> Sección 4</a>
+					</li> 
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="infoApp" data-toggle="modal" data-target="#myModal"><i class="fas fa-info-circle"></i> Info</a>
+					</li>					
+    			</ul>
+  			</div> 
+		</nav>
+		<!-- INFO MODAL -->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Cultivos Leñosos CyL</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+      				</div>
+	  				<!-- Modal body -->
+	  				<div class="modal-body">
+	  					<p>
+		  					Bienvenido a
+	  					</p>
+      				</div>
+	  				<!-- Modal footer -->
+	  				<div class="modal-footer">
+	  					<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      				</div>
+    			</div>
+  			</div>
+		</div>		
+		<div class="container">	
+			<div id="section_1">
+				<h2>Grupos de cultivo</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="select_provincia_1">Provincia:</label>
+							<select id="select_provincia_1" class="form-control">
+								<option value="0" selected>- Seleccionar -</option>
+								<option value="5">Ávila</option>
+								<option value="9">Burgos</option>
+								<option value="24">León</option>
+								<option value="34">Palencia</option>
+								<option value="37">Salamanca</option>
+								<option value="40">Segovia</option>
+								<option value="42">Soria</option>
+								<option value="47">Valladolid</option>
+								<option value="49">Zamora</option>
+							</select>							
+						</div>
+						<div class="form-group">
+							<label for="select_año_1">Año:</label>
+							<select id="select_año_1" class="form-control"></select>	
+						</div>
+						<div class="form-group">
+							<label for="select_grafica_1">Tipo Gráfica:</label>
+							<select id="select_grafica_1" class="form-control">
+								<option value="0" selected>- Seleccionar -</option>
+								<option value="barras_v">Gráfica de barras vertical</option>
+								<option value="barras_h">Gráfica de barras horizontal</option>
+								<option value="circular">Gráfica circular</option>
+							</select>							
+						</div>
+						<button id="buscar_1" class="btn btn-success">Ver resultados</button>						
+					</div>
+					<div class="col-md-9">
+						<div id="chart_1" style="width:100%; min-height: 350px;">
+							<p class="text-muted">Para visualizar el número de hectáreas en producción
+								de cada grupo de cultivo en una provincia y año
+								concretos. Ejemplos de gráficas:
+							</p>
+							<div class="row">
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_1_1.png">Gráfica de barras horizontal</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_1_2.png">Gráfica de barras vertical</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_1_3.png">Gráfica circular</div>
+							</div>
+						</div>	
+						<center><div id="porcentajes_1"></div></center>						
+					</div>
+				</div>
+			</div>	
+			<hr>			
+			<div id="section_2">
+				<h2>Cultivos</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="select_provincia_2">Provincia:</label>
+							<select id="select_provincia_2" class="form-control">
+								<option value="0" selected>- Seleccionar -</option>
+								<option value="5">Ávila</option>
+								<option value="9">Burgos</option>
+								<option value="24">León</option>
+								<option value="34">Palencia</option>
+								<option value="37">Salamanca</option>
+								<option value="40">Segovia</option>
+								<option value="42">Soria</option>
+								<option value="47">Valladolid</option>
+								<option value="49">Zamora</option>
+							</select>							
+						</div>
+						<div class="form-group">
+							<label for="select_año_2">Año:</label>
+							<select id="select_año_2" class="form-control"></select>
+						</div>
+						<div class="form-group">
+							<label for="select_grupo_2">Grupo Cultivo:</label>
+							<select id="select_grupo_2" class="form-control"></select>
+						</div>
+						<div class="form-group">
+							<label for="select_grafica_2">Tipo Gráfica:</label>
+							<select id="select_grafica_2" class="form-control">
+								<option value="0" selected>- Seleccionar -</option>
+								<option value="barras_v">Gráfica de barras vertical</option>
+								<option value="barras_h">Gráfica de barras horizontal</option>
+								<option value="circular">Gráfica circular</option>					
+							</select>
+						</div>
+						<button id="buscar_2" class="btn btn-success">Ver resultados</button>
+					</div>
+					<div class="col-md-9">
+						<div id="chart_2" style="width:100%; min-height: 350px;">
+							<p class="text-muted">Para visualizar el número de hectáreas en producción
+								de cada cultivo de un grupo de cultivo en una provincia y año
+								concretos. Ejemplos de gráficas:
+							</p>
+							<div class="row">
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_2_3.png">Gráfica de barras horizontal</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_2_2.png">Gráfica de barras vertical</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_2_1.png">Gráfica circular</div>
+							</div>							
+						</div>
+						<center><div id="porcentajes_2"></div></center>
+					</div>
+				</div>		
+			</div>	
+			<hr>			
+			<div id="section_3">
+				<h2>Evolución de cultivos en una provincia</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="select_provincia_3">Provincia:</label>
+							<select id="select_provincia_3" class="form-control">
+								<option value="0" selected>- Seleccionar -</option>
+								<option value="5">Ávila</option>
+								<option value="9">Burgos</option>
+								<option value="24">León</option>
+								<option value="34">Palencia</option>
+								<option value="37">Salamanca</option>
+								<option value="40">Segovia</option>
+								<option value="42">Soria</option>
+								<option value="47">Valladolid</option>
+								<option value="49">Zamora</option>
+							</select>							
+						</div>
+						<div class="form-group">
+							<label for="select_grupo_3">Grupo Cultivo:</label>
+							<select id="select_grupo_3" class="form-control"></select>
+						</div>
+						<div class="form-group">
+							<label for="select_cultivo_3">Cultivo:</label>
+							<select id="select_cultivo_3" class="form-control"></select>	
+						</div>
+						<div class="form-group">
+							<label for="select_grafica_3">Tipo Gráfica:</label>
+							<select id="select_grafica_3" class="form-control">
+								<option value="0" selected>- Seleccionar -</option>
+								<option value="barras_v">Gráfica de barras vertical</option>
+								<option value="barras_h">Gráfica de barras horizontal</option>
+								<option value="lineal">Gráfica lineal</option>					
+							</select>	
+						</div>
+						<button id="buscar_3" class="btn btn-success">Ver resultados</button>											
+					</div>
+					<div class="col-md-9">
+						<div id="chart_3" style="width:100%; min-height: 350px;">
+							<p class="text-muted">
+								Para visualizar la evolución a través de los años del número de hectáreas 
+								en producción de un cultivo de un grupo de cultivo en una provincia concreta. 									Ejemplos de gráficas:
+							</p>
+							<div class="row">
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_3_2.png">Gráfica de barras horizontal</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_3_1.png">Gráfica de barras vertical</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_3_3.png">Gráfica lineal</div>
+							</div>								
+						</div>
+						<center><div id="porcentajes_3"></div></center>
+					</div>
+				</div>								
+			</div>
+			<hr>
+			<div id="section_4">
+				<h2>Comparación de un cultivo en las distintas provincias</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="select_grupo_4">Grupo Cultivo:</label>
+							<select id="select_grupo_4" class="form-control"></select>
+						</div>
+						<div class="form-group">
+							<label for="select_cultivo_4">Cultivo:</label>
+							<select id="select_cultivo_4" class="form-control"></select>	
+						</div>
+						<div class="form-group">
+							<label for="select_año_4">Año:</label>
+							<select id="select_año_4" class="form-control"></select>	
+						</div>	
+						<div class="form-group">
+							<label for="select_grafica_4">Tipo Gráfica:</label>
+							<select id="select_grafica_4" class="form-control">
+								<option value="0" selected>- Seleccionar -</option>
+								<option value="barras_v">Gráfica de barras vertical</option>
+								<option value="barras_h">Gráfica de barras horizontal</option>
+								<option value="circular">Gráfica circular</option>					
+							</select>
+						</div>
+						<button id="buscar_4" class="btn btn-success">Ver resultados</button>											
+					</div>
+					<div class="col-md-9">
+						<div id="chart_4" style="width:100%; min-height: 350px;">
+							<p class="text-muted">
+								Para visualizar una comparación entre las distintas provincias 
+								del número de hectáreas en producción de un cultivo de un grupo 
+								de cultivo en una provincia concreta.
+								Ejemplos de gráficas:
+							</p>
+							<div class="row">
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_4_2.png">Gráfica de barras horizontal</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_4_1.png">Gráfica de barras vertical</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_4_3.png">Gráfica circular</div>
+							</div>								
+						</div>	
+						<center><div id="porcentajes_4"></div></center>
+					</div>
+				</div>							
+			</div>
+			<hr>
+		</div>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript" src="js/cultivos-cyl.js"></script>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				<span class="text-muted">Copyright &copy; 2018 <a href="https://github.com/laurodr" target="_blank">Laura Rodríguez</a> | Fuente Datos: <a href="https://datosabiertos.jcyl.es" target="_blank">JCYL</a> | <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">Licencia GPL 3.0</a>
+				</span>
+      		</div>
+    	</footer>			
+	</body>
+</html>
