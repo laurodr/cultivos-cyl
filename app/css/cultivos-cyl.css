@@ -40,12 +40,12 @@ body {
 /* Tablets y más */
 @media (min-width: 768px) {
 	#section_1, #section_2, #section_3, #section_4{
-		padding-top:10%;	
+		padding-top:15%;	
 	}	
 }
 /* Teléfonos */
 @media (max-width: 767px) {
 	#section_1, #section_2, #section_3, #section_4{
-		padding-top:20%;	
+		padding-top:25%;	
 	}	
 }
