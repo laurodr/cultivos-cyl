@@ -36,7 +36,10 @@ body {
 	line-height: 50px; /* Vertically center the text there */
 	background-color: #FFF;
 	text-align: center;
-}			
+}	
+.img-opacity-50{
+	filter: brightness(70%);
+}		
 /* Tablets y más */
 @media (min-width: 768px) {
 	#section_1, #section_2, #section_3, #section_4{
