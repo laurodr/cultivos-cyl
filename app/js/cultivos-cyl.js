@@ -1,5 +1,5 @@
 /* 
-	cultivos-leñosos-cyl.js
+	cultivos-cyl.js
     Copyright (C) 2018  Laura Rodríguez Martín
 
     This program is free software: you can redistribute it and/or modify
@@ -114,6 +114,7 @@
   				$("#select_año_1").html(html_año);
   				$("#select_año_2").html(html_año);
   				$("#select_año_4").html(html_año);
+  				$("#select_año_5").html(html_año);
   				$("#select_grupo_2").html(html_grupo);
   				$("#select_grupo_3").html(html_grupo);
   				$("#select_grupo_4").html(html_grupo);
@@ -123,26 +124,37 @@
 	  				$("#menu_2").removeClass("active");
 	  				$("#menu_3").removeClass("active");
 	  				$("#menu_4").removeClass("active");
+	  				$("#menu_5").removeClass("active");
   				});
   				$('#menu_2').click(function() {
 	  				$("#menu_2").addClass("active");
 	  				$("#menu_1").removeClass("active");
 	  				$("#menu_3").removeClass("active");
 	  				$("#menu_4").removeClass("active");
+	  				$("#menu_5").removeClass("active");
   				});
   				$('#menu_3').click(function() {
 	  				$("#menu_3").addClass("active");
 	  				$("#menu_1").removeClass("active");
 	  				$("#menu_2").removeClass("active");
 	  				$("#menu_4").removeClass("active");
+	  				$("#menu_5").removeClass("active");
   				});
   				$('#menu_4').click(function() {
 	  				$("#menu_4").addClass("active");
 	  				$("#menu_1").removeClass("active");
 	  				$("#menu_2").removeClass("active");
 	  				$("#menu_3").removeClass("active");
+	  				$("#menu_5").removeClass("active");
   				});  				  				  				
-  				
+  				$('#menu_5').click(function() {
+	  				$("#menu_5").addClass("active");
+	  				$("#menu_1").removeClass("active");
+	  				$("#menu_2").removeClass("active");
+	  				$("#menu_3").removeClass("active");
+	  				$("#menu_4").removeClass("active");
+  				});
+  				  				
   				$('#select_grupo_3').on('change', function() {
   					console.log(this.value);
   					load_cultivos(this.value, '#select_cultivo_3');
@@ -152,6 +164,12 @@
   					console.log(this.value);
   					load_cultivos(this.value, '#select_cultivo_4');
 				});
+				
+				$("#buscar_5").click(function() {
+	  				if(todo_ok_5()){
+		  				crear_chart5();	
+	  				}		  				
+	  			});				
 				
 				$("#buscar_4").click(function() {
 	  				if(todo_ok_4()){
@@ -328,6 +346,191 @@
 			  			$("#select_grupo_4").addClass('error');
 			  			return false;
 		  			}
+  				}
+  				function todo_ok_5(){
+	  				if($("#select_año_5").val() != 0){
+		  				$("#select_año_5").removeClass('error');
+		  				if($("#select_grafica_5").val() != 0){
+			  				$("#select_grafica_5").removeClass('error');
+				  			return true;	
+			  			}else{
+				  			$("#select_grafica_5").addClass('error');
+				  			return false;
+			  			}
+		  			}else{
+			  			$("#select_año_5").addClass('error');
+			  			return false;
+		  			}
+  				}
+  				
+  				function crear_chart5(){
+	  				var ha_leon = 0;
+	  				var ha_palencia = 0;
+	  				var ha_burgos = 0;
+	  				var ha_soria = 0;
+	  				var ha_segovia = 0;
+	  				var ha_avila = 0;
+	  				var ha_zamora = 0;
+	  				var ha_salamanca = 0;
+	  				var ha_valladolid = 0;
+	  				var chart_5 = [['Provincia', 'Hectáreas', { role: 'style' }]];
+	  				json_file.forEach(function(item){
+			  			switch(item.codigo_provincia){
+				  			case '5':
+			  					if(item.superficie_secano_en_producci_n != null){
+				  					ha_avila = ha_avila + parseInt(item.superficie_secano_en_producci_n);
+			  					}
+			  					if(item.superficie_regad_o_en_producci_n != null){
+				  					ha_avila = ha_avila + parseInt(item.superficie_regad_o_en_producci_n);
+			  					}				  					
+				  				break;
+				  			case '9':
+			  					if(item.superficie_secano_en_producci_n != null){
+				  					ha_burgos = ha_burgos + parseInt(item.superficie_secano_en_producci_n);
+			  					}
+			  					if(item.superficie_regad_o_en_producci_n != null){
+				  					ha_burgos = ha_burgos + parseInt(item.superficie_regad_o_en_producci_n);
+			  					}				  				
+				  				break;
+				  			case '24':
+			  					if(item.superficie_secano_en_producci_n != null){
+				  					ha_leon = ha_leon + parseInt(item.superficie_secano_en_producci_n);
+			  					}
+			  					if(item.superficie_regad_o_en_producci_n != null){
+				  					ha_leon = ha_leon + parseInt(item.superficie_regad_o_en_producci_n);
+			  					}				  				
+				  				break;
+				  			case '34':
+			  					if(item.superficie_secano_en_producci_n != null){
+				  					ha_palencia = ha_palencia + parseInt(item.superficie_secano_en_producci_n);
+			  					}
+			  					if(item.superficie_regad_o_en_producci_n != null){
+				  					ha_palencia = ha_palencia + parseInt(item.superficie_regad_o_en_producci_n);
+			  					}				  				
+				  				break;
+				  			case '37':
+			  					if(item.superficie_secano_en_producci_n != null){
+				  					ha_salamanca = ha_salamanca + parseInt(item.superficie_secano_en_producci_n);
+			  					}
+			  					if(item.superficie_regad_o_en_producci_n != null){
+				  					ha_salamanca = ha_salamanca + parseInt(item.superficie_regad_o_en_producci_n);
+			  					}				  				
+				  				break;
+				  			case '40':
+			  					if(item.superficie_secano_en_producci_n != null){
+				  					ha_segovia = ha_segovia + parseInt(item.superficie_secano_en_producci_n);
+			  					}
+			  					if(item.superficie_regad_o_en_producci_n != null){
+				  					ha_segovia = ha_segovia + parseInt(item.superficie_regad_o_en_producci_n);
+			  					}				  				
+				  				break;
+				  			case '42':
+			  					if(item.superficie_secano_en_producci_n != null){
+				  					ha_soria = ha_soria + parseInt(item.superficie_secano_en_producci_n);
+			  					}
+			  					if(item.superficie_regad_o_en_producci_n != null){
+				  					ha_soria = ha_soria + parseInt(item.superficie_regad_o_en_producci_n);
+			  					}				  				
+				  				break;
+				  			case '47':
+			  					if(item.superficie_secano_en_producci_n != null){
+			  						ha_valladolid = ha_valladolid + parseInt(item.superficie_secano_en_producci_n);
+		  						}
+		  						if(item.superficie_regad_o_en_producci_n != null){				  													ha_valladolid = ha_valladolid + parseInt(item.superficie_regad_o_en_producci_n);
+			  					}				  				
+				  				break;
+				  			case '49':
+			  					if(item.superficie_secano_en_producci_n != null){
+				  					ha_zamora = ha_zamora + parseInt(item.superficie_secano_en_producci_n);
+			  					}
+			  					if(item.superficie_regad_o_en_producci_n != null){
+				  					ha_zamora = ha_zamora + parseInt(item.superficie_regad_o_en_producci_n);
+			  					}				  				
+			  					break;
+			  			}							  				
+		  			});	
+		  			for (var i = 0; i < provincias.length; i++) {
+						switch(provincias[i]){
+							case 'Ávila':
+								if(ha_avila != 0){
+									chart_5.push([provincias[i], ha_avila, 'color: #3264d2']);	
+								}
+								break;
+							case 'Burgos':
+								if(ha_burgos != 0){
+									chart_5.push([provincias[i], ha_burgos, 'color: #d73c00']);
+								}							
+								break;
+							case 'León':
+								if(ha_leon != 0){
+									chart_5.push([provincias[i], ha_leon, 'color: #f79a00']);
+								}							
+								break;
+							case 'Palencia':
+								if(ha_palencia != 0){
+									chart_5.push([provincias[i], ha_palencia, 'color: #389600']);	
+								}							
+								break;
+							case 'Salamanca':
+								if(ha_salamanca != 0){
+									chart_5.push([provincias[i], ha_salamanca, 'color: #94009f']);	
+								}							
+								break;
+							case 'Segovia':
+								if(ha_segovia != 0){
+									chart_5.push([provincias[i], ha_segovia, 'color: #2e98ca']);	
+								}							
+								break;
+							case 'Soria':
+								if(ha_soria != 0){
+									chart_5.push([provincias[i], ha_soria, 'color: #d84578']);
+								}							
+								break;
+							case 'Valladolid':
+								if(ha_valladolid != 0){
+									chart_5.push([provincias[i], ha_valladolid, 'color: #3264d2']);
+								}							
+								break;
+							case 'Zamora':
+								if(ha_zamora != 0){
+									chart_5.push([provincias[i], ha_zamora, 'color: #d73c00']);
+								}							
+								break;																
+						}	  					
+					}
+		  			if(chart_5.length <= 1){
+	  					console.log('No hay datos');
+	  					$("#porcentajes_5").html("<div class='alert alert-danger alert-dismissible'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>Vaya!</strong> No hay datos disponibles :(, prueba con otros.</div>");	  					
+  					}else{
+						// Load google charts
+						google.charts.load('current', {'packages':['corechart']});
+						google.charts.setOnLoadCallback(drawChart5);
+						// Draw the chart and set the chart values
+						function drawChart5() {
+							var data = google.visualization.arrayToDataTable(chart_5);
+							var view = new google.visualization.DataView(data);
+							view.setColumns([0, 1,
+  								{ calc: "stringify",
+	  								sourceColumn: 1,
+	  								type: "string",
+	  								role: "annotation" }, 2]);
+	  						// Optional; add a title and set the width and height of the chart
+	  						var options = {'title':'Nº Superficies de cultivo leñoso en producción (ha)', legend: 'none'};
+	  						// Display the chart inside the <div> element with id="chart_1"
+	  						switch($("#select_grafica_5").val()){
+								case 'barras_v':
+									var chart = new google.visualization.ColumnChart(document.getElementById('chart_5'));
+									break;
+								case 'barras_h':
+									var chart = new google.visualization.BarChart(document.getElementById('chart_5'));
+									break;
+								case 'circular':
+									var chart = new google.visualization.PieChart(document.getElementById('chart_5'));
+									break;
+							}
+							chart.draw(view, options);
+						}	  					
+	  				}	  				
   				}
   								
   				function crear_chart4(){

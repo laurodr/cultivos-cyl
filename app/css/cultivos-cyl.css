@@ -42,13 +42,13 @@ body {
 }		
 /* Tablets y más */
 @media (min-width: 768px) {
-	#section_1, #section_2, #section_3, #section_4{
+	#section_1, #section_2, #section_3, #section_4, #section_5{
 		padding-top:7%;	
 	}	
 }
 /* Teléfonos */
 @media (max-width: 767px) {
-	#section_1, #section_2, #section_3, #section_4{
+	#section_1, #section_2, #section_3, #section_4, #section_5{
 		padding-top:25%;	
 	}	
 }

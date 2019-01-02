@@ -331,6 +331,44 @@
 				</div>							
 			</div>
 			<hr>
+			<div id="section_5">
+				<h2>Comparación (ha) del total de cultivos leñosos en las distintas provincias</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="select_año_5">Año:</label>
+							<select id="select_año_5" class="form-control"></select>	
+						</div>	
+						<div class="form-group">
+							<label for="select_grafica_5">Tipo Gráfica:</label>
+							<select id="select_grafica_5" class="form-control">
+								<option value="0" selected>- Seleccionar -</option>
+								<option value="barras_v">Gráfica de barras vertical</option>
+								<option value="barras_h">Gráfica de barras horizontal</option>
+								<option value="circular">Gráfica circular</option>					
+							</select>
+						</div>
+						<button id="buscar_5" class="btn btn-success">Ver resultados</button>											
+					</div>
+					<div class="col-md-9">
+						<div id="chart_5" style="width:100%; min-height: 350px;">
+							<p class="text-muted">
+								Para visualizar una comparación entre las distintas provincias 
+								del número de hectáreas en producción totales de cultivos
+								leñosos en cada provincia.
+								Ejemplos de gráficas:
+							</p>
+							<div class="row">
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_5_2.png">Gráfica de barras horizontal</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_5_1.png">Gráfica de barras vertical</div>
+								<div class="col-md-4"><img class="img-fluid img-thumbnail" src="img/chart_5_3.png">Gráfica circular</div>
+							</div>								
+						</div>	
+						<center><div id="porcentajes_5"></div></center>
+					</div>
+				</div>							
+			</div>			
+			<hr>			
 		</div>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script type="text/javascript" src="js/cultivos-cyl.js"></script>
