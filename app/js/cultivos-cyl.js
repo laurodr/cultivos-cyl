@@ -979,63 +979,63 @@
 								if(ha_frutal != 0){
 									chart_1.push([grupos_cultivo[i], ha_frutal, 'color: #3264d2']);
 									p_frutal = (ha_frutal/ha_total)*100;
-									html_porcentaje = html_porcentaje + " FRUTALES: " + Number((p_frutal).toFixed(1)) + "% ";	
+									html_porcentaje = html_porcentaje + " <b>FRUTALES: </b>" + Number((p_frutal).toFixed(1)) + "%, ";	
 								}
 								break;
 							case 'VIÑEDO':
 								if(ha_viñedo != 0){
 									chart_1.push([grupos_cultivo[i], ha_viñedo, 'color: #d73c00']);
 									p_viñedo = (ha_viñedo/ha_total)*100;
-									html_porcentaje = html_porcentaje + "VIÑEDO: " + Number((p_viñedo).toFixed(1)) + "% ";
+									html_porcentaje = html_porcentaje + "<b>VIÑEDO: </b>" + Number((p_viñedo).toFixed(1)) + "%, ";
 								}							
 								break;
 							case 'OLIVAR Y OTROS C.I.':
 								if(ha_olivar_o != 0){
 									chart_1.push([grupos_cultivo[i], ha_olivar_o, 'color: #f79a00']);
 									p_olivar_o = (ha_olivar_o/ha_total)*100;
-									html_porcentaje = html_porcentaje + "OLIVAR Y OTROS C.I. : " + Number((p_olivar_o).toFixed(1)) + "% ";	
+									html_porcentaje = html_porcentaje + "<b>OLIVAR Y OTROS C.I. : </b>" + Number((p_olivar_o).toFixed(1)) + "%, ";	
 								}							
 								break;
 							case 'CITRICOS':
 								if(ha_citrico != 0){
 									chart_1.push([grupos_cultivo[i], ha_citrico, 'color: #389600']);
 									p_citrico = (ha_citrico/ha_total)*100;
-									html_porcentaje = html_porcentaje + "CITRICOS: " + Number((p_citrico).toFixed(1)) + "% ";	
+									html_porcentaje = html_porcentaje + "<b>CITRICOS: </b>" + Number((p_citrico).toFixed(1)) + "%, ";	
 								}							
 								break;
 							case 'VIVEROS':
 								if(ha_vivero != 0){
 									chart_1.push([grupos_cultivo[i], ha_vivero, 'color: #94009f']);
 									p_vivero = (ha_vivero/ha_total)*100;
-									html_porcentaje = html_porcentaje + "VIVEROS: " + Number((p_vivero).toFixed(1)) + "% ";	
+									html_porcentaje = html_porcentaje + "<b>VIVEROS: </b>" + Number((p_vivero).toFixed(1)) + "%, ";	
 								}							
 								break;
 							case 'VIÑEDO OCUPACIÓN PRINCIPAL':
 								if(ha_viñedo_p != 0){
 									chart_1.push([grupos_cultivo[i], ha_viñedo_p, 'color: #2e98ca']);
 									p_viñedo_p = (ha_viñedo_p/ha_total)*100;
-									html_porcentaje = html_porcentaje + "VIÑEDO OCUPACIÓN PRINCIPAL: " + Number((p_viñedo_p).toFixed(1)) + "% ";	
+									html_porcentaje = html_porcentaje + "<b>VIÑEDO OCUPACIÓN PRINCIPAL: </b>" + Number((p_viñedo_p).toFixed(1)) + "%, ";	
 								}							
 								break;
 							case 'OLIVAR':
 								if(ha_olivar != 0){
 									chart_1.push([grupos_cultivo[i], ha_olivar, 'color: #d84578']);
 									p_olivar = (ha_olivar/ha_total)*100;
-									html_porcentaje = html_porcentaje + "OLIVAR: " + Number((p_olivar).toFixed(1)) + "% ";
+									html_porcentaje = html_porcentaje + "<b>OLIVAR: </b>" + Number((p_olivar).toFixed(1)) + "%, ";
 								}							
 								break;
 							case 'OTROS CULTIVOS LEÑOSOS':
 								if(ha_otros != 0){
 									chart_1.push([grupos_cultivo[i], ha_otros, 'color: #3264d2']);
 									p_otros = (ha_otros/ha_total)*100;
-									html_porcentaje = html_porcentaje + "OTROS CULTIVOS LEÑOSOS: " + Number((p_otros).toFixed(1)) + "% ";	
+									html_porcentaje = html_porcentaje + "<b>OTROS CULTIVOS LEÑOSOS: </b>" + Number((p_otros).toFixed(1)) + "%, ";	
 								}							
 								break;
 							case 'VIÑEDO ASOCIADO':
 								if(ha_viñedo_a != 0){
 									chart_1.push([grupos_cultivo[i], ha_viñedo_a, 'color: #d73c00']);	
 									p_viñedo_a = (ha_viñedo_a/ha_total)*100;
-									html_porcentaje = html_porcentaje + "VIÑEDO ASOCIADO: " + Number((p_viñedo_a).toFixed(1)) + "% ";
+									html_porcentaje = html_porcentaje + "<b>VIÑEDO ASOCIADO: </b>" + Number((p_viñedo_a).toFixed(1)) + "%, ";
 								}							
 								break;
 						}	  					
@@ -1659,203 +1659,203 @@
 				  						if(ha_manzano != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_manzano, 'color: #3264d2']);
 				  							p_manzano = (ha_manzano/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "MANZANO: " + Number((p_manzano).toFixed(1)) + "% ";
+				  							html_porcentaje = html_porcentaje + "<b>MANZANO: </b>" + Number((p_manzano).toFixed(1)) + "%, ";
 										}
 				  						break;
 				  					case 'HIGUERA':
 				  						if(ha_higuera != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_higuera, 'color: #d73c00']);
 				  							p_higuera = (ha_higuera/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "HIGUERA: " + Number((p_higuera).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>HIGUERA: </b>" + Number((p_higuera).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'GRANADO':
 				  						if(ha_granado != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_granado, 'color: #f79a00']);
 				  							p_granado = (ha_granado/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "GRANADO: " + Number((p_granado).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>GRANADO: </b>" + Number((p_granado).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'PERAL':
 				  						if(ha_peral != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_peral, 'color: #389600']);
 				  							p_peral = (ha_peral/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "PERAL: " + Number((p_peral).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>PERAL: </b>" + Number((p_peral).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'MEMBRILLO':
 				  						if(ha_membrillo != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_membrillo, 'color: #94009f']);
 				  							p_membrillo = (ha_membrillo/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "MEMBRILLO: " + Number((p_membrillo).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>MEMBRILLO: </b>" + Number((p_membrillo).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'NISPERO':
 				  						if(ha_nispero != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_nispero, 'color: #2e98ca']);
 				  							p_nispero = (ha_nispero/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "NISPERO: " + Number((p_nispero).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>NISPERO: </b>" + Number((p_nispero).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'ALBARICOQUERO':
 				  						if(ha_albaricoquero != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_albaricoquero, 'color: #d84578']);
 				  							p_albaricoquero = (ha_albaricoquero/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "ALBARICOQUERO: " + Number((p_albaricoquero).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>ALBARICOQUERO: </b>" + Number((p_albaricoquero).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'CEREZO Y GUINDO':
 				  						if(ha_cerezo_guindo != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_cerezo_guindo, 'color: #3264d2']);
 				  							p_cerezo_guindo = (ha_cerezo_guindo/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "CEREZO Y GUINDO: " + Number((p_cerezo_guindo).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>CEREZO Y GUINDO: </b>" + Number((p_cerezo_guindo).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'MELOCOTONERO':
 				  						if(ha_melocotonero != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_melocotonero, 'color: #d73c00']);
 				  							p_melocotonero = (ha_melocotonero/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "MELOCOTONERO: " + Number((p_melocotonero).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>MELOCOTONERO: </b>" + Number((p_melocotonero).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'CIRUELO':
 				  						if(ha_ciruelo != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_ciruelo, 'color: #f79a00']);
 				  							p_ciruelo = (ha_ciruelo/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "CIRUELO: " + Number((p_ciruelo).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>CIRUELO: </b>" + Number((p_ciruelo).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'NOGAL':
 				  						if(ha_nogal != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_nogal, 'color: #389600']);
 				  							p_nogal = (ha_nogal/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "NOGAL: " + Number((p_nogal).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>NOGAL: </b>" + Number((p_nogal).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'ALMENDRO':
 				  						if(ha_almendro != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_almendro, 'color: #94009f']);
 				  							p_almendro = (ha_almendro/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "ALMENDRO: " + Number((p_almendro).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>ALMENDRO: </b>" + Number((p_almendro).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'AVELLANO':
 				  						if(ha_avellano != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_avellano, 'color: #2e98ca']);
 				  							p_avellano = (ha_avellano/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "AVELLANO: " + Number((p_avellano).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>AVELLANO: </b>" + Number((p_avellano).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'AZUFUAIFO Y OTROS':
 				  						if(ha_azufuaifo_o != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_azufuaifo_o, 'color: #d84578']);
 				  							p_azufuaifo_o = (ha_azufuaifo_o/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "AZUFUAIFO Y OTROS: " + Number((p_azufuaifo_o).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>AZUFUAIFO Y OTROS: </b>" + Number((p_azufuaifo_o).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'CHIRIMOYO':
 				  						if(ha_chirimoyo != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_chirimoyo, 'color: #3264d2']);
 				  							p_chirimoyo = (ha_chirimoyo/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "CHIRIMOYO: " + Number((p_chirimoyo).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>CHIRIMOYO: </b>" + Number((p_chirimoyo).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'AGUACATE':
 				  						if(ha_aguacate != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_aguacate, 'color: #d73c00']);
 				  							p_aguacate = (ha_aguacate/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "AGUACATE: " + Number((p_aguacate).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>AGUACATE: </b>" + Number((p_aguacate).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'PALMERA DATILERA':
 				  						if(ha_palmera != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_palmera, 'color: #f79a00']);
 				  							p_palmera = (ha_palmera/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "PALMERA DATILERA: " + Number((p_palmera).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>PALMERA DATILERA: </b>" + Number((p_palmera).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'CHUMBERA':
 				  						if(ha_chumbera != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_chumbera, 'color: #389600']);
 				  							p_chumbera = (ha_chumbera/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "CHUMBERA: " + Number((p_chumbera).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>CHUMBERA: </b>" + Number((p_chumbera).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'ACEROLO Y OTROS':
 				  						if(ha_acerolo_o != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_acerolo_o, 'color: #94009f']);
 				  							p_acerolo_o = (ha_acerolo_o/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "ACEROLO Y OTROS: " + Number((p_acerolo_o).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>ACEROLO Y OTROS: </b>" + Number((p_acerolo_o).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'CASTAÑO FRUTO':
 				  						if(ha_castaño != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_castaño, 'color: #2e98ca']);
 				  							p_castaño = (ha_castaño/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "CASTAÑO FRUTO: " + Number((p_castaño).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>CASTAÑO FRUTO: </b>" + Number((p_castaño).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'PISTACHO':
 				  						if(ha_pistacho != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_pistacho, 'color: #d84578']);
 				  							p_pistacho = (ha_pistacho/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "PISTACHO: " + Number((p_pistacho).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>PISTACHO: </b>" + Number((p_pistacho).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'AZUFUAIFO,GUAYABO,KAKI,FRAMBUESO Y OTROS':
 				  						if(ha_azufuaifo_g_k != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_azufuaifo_g_k, 'color: #3264d2']);
 				  							p_azufuaifo_g_k = (ha_azufuaifo_g_k/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "AZUFUAIFO,GUAYABO,KAKI,FRAMBUESO Y OTROS: " + Number((p_azufuaifo_g_k).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>AZUFUAIFO,GUAYABO,KAKI,FRAMBUESO Y OTROS: </b>" + Number((p_azufuaifo_g_k).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'FRAMBUESO':
 				  						if(ha_frambueso != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_frambueso, 'color: #d73c00']);
 				  							p_frambueso = (ha_frambueso/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "FRAMBUESO: " + Number((p_frambueso).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>FRAMBUESO: </b>" + Number((p_frambueso).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'KIWI':
 				  						if(ha_kiwi != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_kiwi, 'color: #f79a00']);
 				  							p_kiwi = (ha_kiwi/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "KIWI: " + Number((p_kiwi).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>KIWI: </b>" + Number((p_kiwi).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'AZUFUAIFO,GUAYABO,KAKI Y OTROS':
 				  						if(ha_azufuaifo_g_k_o != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_azufuaifo_g_k_o, 'color: #389600']);
 				  							p_azufuaifo_g_k_o = (ha_azufuaifo_g_k_o/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "AZUFUAIFO,GUAYABO,KAKI Y OTROS: " + Number((p_azufuaifo_g_k_o).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>AZUFUAIFO,GUAYABO,KAKI Y OTROS: </b>" + Number((p_azufuaifo_g_k_o).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'AZUFAIFO, GUAYABO Y OTROS CARNOSOS':
 				  						if(ha_azufuaifo_g_k_c != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_azufuaifo_g_k_c, 'color: #94009f']);
 				  							p_azufuaifo_g_k_c = (ha_azufuaifo_g_k_c/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "AZUFAIFO, GUAYABO Y OTROS CARNOSOS: " + Number((p_azufuaifo_g_k_c).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>AZUFAIFO, GUAYABO Y OTROS CARNOSOS: </b>" + Number((p_azufuaifo_g_k_c).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'ARÁNDANO':
 				  						if(ha_arandano != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_arandano, 'color: #2e98ca']);
 				  							p_arandano = (ha_arandano/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "ARÁNDANO: " + Number((p_arandano).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>ARÁNDANO: </b>" + Number((p_arandano).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'NECTARINA':
 				  						if(ha_nectarina != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_nectarina, 'color: #d84578']);
 				  							p_nectarina = (ha_nectarina/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "NECTARINA: " + Number((p_nectarina).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>NECTARINA: </b>" + Number((p_nectarina).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'GROSELLERO':
 				  						if(ha_grosellero != 0){
 				  							chart_2.push([cultivo_frutales[i], ha_grosellero, 'color: #3264d2']);
 				  							p_grosellero = (ha_grosellero/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "GROSELLERO: " + Number((p_grosellero).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>GROSELLERO: </b>" + Number((p_grosellero).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  				}
@@ -1868,21 +1868,21 @@
 				  						if(ha_mesa != 0){
 				  							chart_2.push([cultivo_viñedo[i], ha_mesa, 'color: #3264d2']);
 				  							p_mesa = (ha_mesa/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "VIÑEDO DE UVA MESA: " + Number((p_mesa).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>VIÑEDO DE UVA MESA: </b>" + Number((p_mesa).toFixed(1)) + "%, ";				  							
 										}					  				
 					  					break;
 					  				case 'VIÑEDO DE UVA VINO':
 				  						if(ha_vino != 0){
 				  							chart_2.push([cultivo_viñedo[i], ha_vino, 'color: #d73c00']);
 				  							p_vino = (ha_vino/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "VIÑEDO DE UVA VINO: " + Number((p_vino).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>VIÑEDO DE UVA VINO: </b>" + Number((p_vino).toFixed(1)) + "%, ";				  							
 										}					  				
 					  					break;
 					  				case 'VIÑEDO DE UVA PASAS':
 				  						if(ha_pasas != 0){
 				  							chart_2.push([cultivo_viñedo[i], ha_pasas, 'color: #f79a00']);
 				  							p_pasas = (ha_pasas/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "VIÑEDO DE UVA PASAS: " + Number((p_pasas).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>VIÑEDO DE UVA PASAS: </b>" + Number((p_pasas).toFixed(1)) + "%, ";				  							
 										}					  				
 					  					break;
 					  			}
@@ -1895,28 +1895,28 @@
 				  						if(ha_aceite != 0){
 				  							chart_2.push([cultivo_olivar_o[i], ha_aceite, 'color: #3264d2']);
 				  							p_aceite = (ha_aceite/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "OLI ACEITUNA ACEITE: " + Number((p_aceite).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>OLI ACEITUNA ACEITE: </b>" + Number((p_aceite).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'MORERA Y OTROS':
 				  						if(ha_morera != 0){
 				  							chart_2.push([cultivo_olivar_o[i], ha_morera, 'color: #d73c00']);
 				  							p_morera = (ha_morera/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "MORERA Y OTROS: " + Number((p_morera).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>MORERA Y OTROS: </b>" + Number((p_morera).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'MIMBRERO':
 				  						if(ha_mimbrero != 0){
 				  							chart_2.push([cultivo_olivar_o[i], ha_mimbrero, 'color: #f79a00']);
 				  							p_mimbrero = (ha_mimbrero/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "MIMBRERO: " + Number((p_mimbrero).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>MIMBRERO: </b>" + Number((p_mimbrero).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'OLIVAR ACEIUNA MESA':
 				  						if(ha_mesa != 0){
 				  							chart_2.push([cultivo_olivar_o[i], ha_mesa, 'color: #389600']);
 				  							p_mesa = (ha_mesa/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "OLIVAR ACEIUNA MESA: " + Number((p_mesa).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>OLIVAR ACEIUNA MESA: </b>" + Number((p_mesa).toFixed(1)) + "%, ";				  							
 										}				  						
 				  						break;				  				
 					  			}
@@ -1929,14 +1929,14 @@
 				  						if(ha_naranjo != 0){
 				  							chart_2.push([cultivo_citricos[i], ha_naranjo, 'color: #3264d2']);
 				  							p_naranjo = (ha_naranjo/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "NARANJO: " + Number((p_naranjo).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>NARANJO: </b>" + Number((p_naranjo).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'LIMONERO':
 				  						if(ha_limonero != 0){
 				  							chart_2.push([cultivo_citricos[i], ha_limonero, 'color: #d73c00']);
 				  							p_limonero = (ha_limonero/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "LIMONERO: " + Number((p_limonero).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>LIMONERO: </b>" + Number((p_limonero).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;					  				
 					  			}
@@ -1949,7 +1949,7 @@
 				  						if(ha_viveros != 0){
 				  							chart_2.push([cultivo_viveros[i], ha_viveros, 'color: #3264d2']);
 				  							p_viveros = (ha_viveros/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "VIVEROS: " + Number((p_viveros).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>VIVEROS: </b>" + Number((p_viveros).toFixed(1)) + "%, ";				  							
 										}					  				
 					  					break;
 					  			}
@@ -1962,21 +1962,21 @@
 				  						if(ha_mesa != 0){
 				  							chart_2.push([cultivo_viñedo_p[i], ha_mesa, 'color: #3264d2']);
 				  							p_mesa = (ha_mesa/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "VIÑEDO DE UVA MESA: " + Number((p_mesa).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>VIÑEDO DE UVA MESA: </b>" + Number((p_mesa).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'VIÑEDO DE UVA VINO':
 				  						if(ha_vino != 0){
 				  							chart_2.push([cultivo_viñedo_p[i], ha_vino, 'color: #d73c00']);
 				  							p_vino = (ha_vino/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "VIÑEDO DE UVA VINO: " + Number((p_vino).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>VIÑEDO DE UVA VINO: </b>" + Number((p_vino).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'VIÑEDO DE UVA PASAS Y VIVEROS':
 				  						if(ha_pasas != 0){
 				  							chart_2.push([cultivo_viñedo_p[i], ha_pasas, 'color: #f79a00']);
 				  							p_pasas = (ha_pasas/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "VIÑEDO DE UVA PASAS Y VIVEROS: " + Number((p_pasas).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>VIÑEDO DE UVA PASAS Y VIVEROS: </b>" + Number((p_pasas).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;					  				
 					  			}
@@ -1989,14 +1989,14 @@
 				  						if(ha_aceite != 0){
 				  							chart_2.push([cultivo_olivar[i], ha_aceite, 'color: #3264d2']);
 				  							p_aceite = (ha_aceite/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "OLI ACEITUNA ACEITE: " + Number((p_aceite).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>OLI ACEITUNA ACEITE: </b>" + Number((p_aceite).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'OLIVAR ACEIUNA MESA':
 				  						if(ha_mesa != 0){
 				  							chart_2.push([cultivo_olivar[i], ha_mesa, 'color: #d73c00']);
 				  							p_mesa = (ha_mesa/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "OLIVAR ACEIUNA MESA: " + Number((p_mesa).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>OLIVAR ACEIUNA MESA: </b>" + Number((p_mesa).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;					  				
 					  			}
@@ -2009,21 +2009,21 @@
 				  						if(ha_morera != 0){
 				  							chart_2.push([cultivo_otros[i], ha_morera, 'color: #3264d2']);
 				  							p_morera = (ha_morera/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "MORERA Y OTROS: " + Number((p_morera).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>MORERA Y OTROS: </b>" + Number((p_morera).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'MIMBRERO':
 				  						if(ha_mimbrero != 0){
 				  							chart_2.push([cultivo_otros[i], ha_mimbrero, 'color: #d73c00']);
 				  							p_mimbrero = (ha_mimbrero/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "MIMBRERO: " + Number((p_mimbrero).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>MIMBRERO: </b>" + Number((p_mimbrero).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;
 				  					case 'ZUMAQUE':
 				  						if(ha_zumaque != 0){
 				  							chart_2.push([cultivo_otros[i], ha_zumaque, 'color: #f79a00']);
 				  							p_zumaque = (ha_zumaque/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "ZUMAQUE: " + Number((p_zumaque).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>ZUMAQUE: </b>" + Number((p_zumaque).toFixed(1)) + "%, ";				  							
 										}				  					
 				  						break;					  				
 					  			}
@@ -2036,7 +2036,7 @@
 				  						if(ha_vino != 0){
 				  							chart_2.push([cultivo_viñedo_a[i], ha_vino, 'color: #3264d2']);
 				  							p_vino = (ha_vino/ha_total)*100;
-				  							html_porcentaje = html_porcentaje + "VIÑEDO DE UVA VINO: " + Number((p_vino).toFixed(1)) + "% ";				  							
+				  							html_porcentaje = html_porcentaje + "<b>VIÑEDO DE UVA VINO: </b>" + Number((p_vino).toFixed(1)) + "%, ";				  							
 										}					  				
 					  					break;
 					  			}
